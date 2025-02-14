@@ -1,5 +1,4 @@
-#G raphical User Interface Image Processing
-
+# Biosensor
 ##		Prerequisites
 Before running the code, make sure you have the following libraries installed:
 - Busio
