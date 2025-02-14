@@ -41,7 +41,7 @@ please visit this [webpage] (https://learn.adafruit.com/raspberry-pi-analog-to-d
 Clone this repository and navigate to the project directory.
 ```
 # Clone this repository
-$ git clone https://github.com/Zaker04/GUI_DIP.git
+$ git clone https://github.com/Zaker04/Biosensor.git
 ```
  Run the main script to launch the GUI:
 ```
@@ -52,22 +52,24 @@ python UI_Sensor_6.0.py
 Note for Raspberry Pi Users: Some lines of code need to be uncommented to run 
 on the Raspberry Pi. For testing on other operating systems, these lines should remain commented.
 
-### Header
-
-In all of the places where you're supposed to fill your information you'll find HTML comments. As shown below just replace what is already in the opening and closing tags below the comment with your information.
-
-```html
-<div class="header__text-box row">
-    <div class="header__text">
-        <h1 class="heading-primary">
-        <!-- Replace the following name with your name -->
-        <span>Syed Ali Hussnain</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-    </div>
-</div>
+### Import Section
+In this section `Uncomment the #` like
+```
+# from os import getcwd,sep
+from PyQt5 import QtGui
+import pyqtgraph as pg
+from PyQt5.QtCore import Qt, QThread, pyqtSignal,QObject
+from PyQt5.QtWidgets import (QAction, qApp, QApplication, QDialog, QInputDialog,
+                             QGridLayout, QLabel,QMainWindow, QMessageBox, QPushButton, 
+                              QStyleFactory, QTextEdit, QWidget)
+import sys
+import numpy as np
+import time
+# import busio
+# import digitalio
+# import board
+# import adafruit_mcp3xxx.mcp3008 as MCP
+# from adafruit_mcp3xxx.analog_in import AnalogIn
 ```
 
 ### Variables Section
