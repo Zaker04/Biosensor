@@ -52,28 +52,28 @@ python UI_Sensor_6.0.py
 Note for Raspberry Pi Users: Some lines of code need to be uncommented to run 
 on the Raspberry Pi. For testing on other operating systems, these lines should remain commented.
 
-### Import Section
-In this section `Uncomment the #` like
-```# from os import getcwd,sep
-from PyQt5 import QtGui
-import pyqtgraph as pg
-from PyQt5.QtCore import Qt, QThread, pyqtSignal,QObject
-from PyQt5.QtWidgets import (QAction, qApp, QApplication, QDialog, QInputDialog,
-                             QGridLayout, QLabel,QMainWindow, QMessageBox, QPushButton, 
-                              QStyleFactory, QTextEdit, QWidget)
-import sys
-import numpy as np
-import time
-# import busio
-# import digitalio
-# import board
-# import adafruit_mcp3xxx.mcp3008 as MCP
-# from adafruit_mcp3xxx.analog_in import AnalogIn```.
+### Header
 
+In all of the places where you're supposed to fill your information you'll find HTML comments. As shown below just replace what is already in the opening and closing tags below the comment with your information.
+
+```html
+<div class="header__text-box row">
+    <div class="header__text">
+        <h1 class="heading-primary">
+        <!-- Replace the following name with your name -->
+        <span>Syed Ali Hussnain</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Web Developer based in Lahore, Pakistan.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+    </div>
+</div>
+```
 
 ### Variables Section
 In this section `Uncommnetn the #`
-```    '''Variables'''
+```    
+'''Variables'''
     # Array's para guardar los datos
     finished = pyqtSignal()
     Result=pyqtSignal(list,list)
@@ -86,15 +86,17 @@ In this section `Uncommnetn the #`
     # # create the mcp object
     # self.mcp = MCP.MCP3008(self.spi, self.cs)
     
-    # create an analog input channel on pin 0```.
+    # create an analog input channel on pin 0
+```
 
 ### Function Section
 In this section be very careful:
-- First `Uncomment the #`
-- Second `Comment the line nuevoDato=float(np.random.rand(1))`
-- Third you can change the number of data to red modifiying the number in this line `if len(self.dataX) > 49:`
+- First `Uncomment the #`.
+- Second `Comment the line nuevoDato=float(np.random.rand(1))`.
+- Third you can change the number of data to red modifiying the number in this line `if len(self.dataX) > 49:`.
 
-```    '''Funciones'''     
+```
+    '''Funciones'''     
     def UpdatePlot(self):
         self.dataX = [] 
         self.dataY = []
@@ -121,7 +123,8 @@ In this section be very careful:
                 self.dataY = []
                 self.lastY=0
             QApplication.processEvents()
-        self.finished.emit()```
+        self.finished.emit()
+```
 
 ##		License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
