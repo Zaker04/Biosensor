@@ -53,7 +53,7 @@ Note for Raspberry Pi Users: Some lines of code need to be uncommented to run
 on the Raspberry Pi. For testing on other operating systems, these lines should remain commented.
 
 ### Import Section
-In this section `Uncomment the #`
+In this section `Uncomment the #` like
 ```# from os import getcwd,sep
 from PyQt5 import QtGui
 import pyqtgraph as pg
@@ -68,7 +68,8 @@ import time
 # import digitalio
 # import board
 # import adafruit_mcp3xxx.mcp3008 as MCP
-# from adafruit_mcp3xxx.analog_in import AnalogIn```
+# from adafruit_mcp3xxx.analog_in import AnalogIn```.
+
 
 ### Variables Section
 In this section `Uncommnetn the #`
@@ -85,7 +86,7 @@ In this section `Uncommnetn the #`
     # # create the mcp object
     # self.mcp = MCP.MCP3008(self.spi, self.cs)
     
-    # create an analog input channel on pin 0```
+    # create an analog input channel on pin 0```.
 
 ### Function Section
 In this section be very careful:
