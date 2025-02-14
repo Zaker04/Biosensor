@@ -34,7 +34,7 @@ You can install them using the following commands:
 pip install pyqt5
 ```
 For detailed instructions on how to install the libraries for MCP, 
-please visit this [webpage] (https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008).
+please visit this [webpage](https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008)
 
 ##		Usage
 Clone this repository and navigate to the project directory.
